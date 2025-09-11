@@ -3,7 +3,7 @@ The package includes an executable to identify Antifreeze Proteins for given seq
 It also includes all components of 模型名. You may incorporate 模型名 into your pipeline or modify it to suit your needs.
 Please also check out our webserver for real-time prediction of antifreeze protein features. https://2025.igem.wiki/Tianjin/software(模型名)
 # Requirements
-python == .12.3
+python == 3.12.3
 streamlit == 1.47.1
 torch >= 2.0.0
 transformers >= 4.30.0
@@ -60,3 +60,4 @@ Results are sorted by confidence level
 ## Download Options:
 
 Download all prediction results as a CSV file with details including sequence names, lengths, probabilities, and predictions.
+
