@@ -1,20 +1,14 @@
 # 模型名
 The package includes an executable to identify Antifreeze Proteins for given sequences. 
+
 It also includes all components of 模型名. You may incorporate 模型名 into your pipeline or modify it to suit your needs.
+
 Please also check out our webserver for real-time prediction of antifreeze protein features. https://2025.igem.wiki/Tianjin/software(模型名)
-# Requirements
-python == 3.12.3
-streamlit == 1.47.1
-torch >= 2.0.0
-transformers >= 4.30.0
-pandas == 2.3.1
-numpy == 2.2.2
-tqdm == 4.67.1
-sentencepiece == 0.2.0
-huggingface-hub == 0.34.2
 # Description
 This antifreeze protein (AFP) prediction model presents an end-to-end computational framework for predicting protein function directly from sequence data. It employs a two-stage architecture combining a pre-trained protein language model for feature extraction with a bespoke deep learning classifier for accurate functional annotation.
+
 The model is built upon the ProtT5-XL-UniRef50 encoder, a transformer-based model pre-trained on the UniRef50 database, to generate high-dimensional feature representations (1024 dimensions per amino acid) from input protein sequences. These rich embeddings capture complex semantic and syntactic patterns within the protein sequences. The subsequent classifier, named igemTJModel, utilizes a sophisticated multi-modal neural network architecture to process these features. It integrates 1D convolutional layers (1D-CNN) to identify local amino acid motifs, bidirectional LSTM (Bi-LSTM) layers to capture long-range contextual dependencies across the sequence, and an attention mechanism to dynamically weigh the importance of specific residues, significantly enhancing model interpretability. Regularization strategies like Layer Normalization, Dropout, and residual connections are incorporated to ensure training stability and prevent overfitting.
+
 Additionally, a user-friendly web application is built on Streamlit for real-time prediction and hypothesis testing by researchers. This tool provides a powerful, high-performance, and interpretable platform for accelerating AFP discovery and analysis.
 # Dataset
 AFP920.seq: this file contains 920 AFPs with key-value format
@@ -22,8 +16,11 @@ Non-AFP9493.seq: this file contains 9493 Non-AFPs with key-value format
 
 We constructed a dataset comprising 920 AFPs and 9493 non-AFPs.
 A comprehensive search was conducted in the UniProtKB database until January 24, 2025 using specific keywords, resulting in the collection of 6589 AFPs. Next, the maximal pairwise sequence identity of the proteins in the manually inspected dataset was culled to ≤40 % using CD-HIT, yielding a set of 920 unique AFPs.
+
 The negative dataset was derived from 9493 seed proteins of Pfam protein families that are not associated with antifreeze proteins , which is widely used for evaluating the performance of AFPs prediction methods.
+
 Balance dataset: The dataset was divided into training and test sets, 644 AFPs and 644 non-AFPs were randomly selected as positive and negative samples to form the training dataset, and the remaining 276 AFPs and 8849 non-AFPs were designated as the test dataset
+
 Imbalanced dataset: To further validate the predictive performance and facilitate subsequent research, we introduced an imbalanced dataset. This dataset was divided with 70% AFPs and non-AFPs for training and the remaining 30% for independent testing respectively.
 # Deployment of 模型名
 ## Set up environment for 模型名
@@ -51,13 +48,13 @@ Click the "Predict" button to start processing. A progress bar will show the sta
 Prediction Execution: Click the "Predict" button to start processing. A progress bar will show the status of sequence feature extraction and prediction.
 
 Predictions are shown as individual cards with:
-Sequence name/length
-AFP/Non-AFP prediction
-Confidence level (High/Medium/Low)
-AFP probability visual progress bar
-Expandable sections for raw model outputs (logits) and full sequences
-Results are sorted by confidence level
+`Sequence name/length`
+`AFP/Non-AFP prediction`
+`Confidence level (High/Medium/Low)`
+`AFP probability visual progress bar`
+Expandable sections for raw model outputs (`logits`) and full sequences
+`Results` are sorted by confidence level
 ## Download Options:
+Download all prediction results as a `CSV` file with details including sequence names, lengths, probabilities, and predictions.
 
-Download all prediction results as a CSV file with details including sequence names, lengths, probabilities, and predictions.
 
