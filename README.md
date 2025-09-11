@@ -41,6 +41,7 @@ The application will first load the feature extraction (ProtT5) and prediction m
 Adjust the prediction threshold using a slider (default is 0.66). Lower values increase sensitivity for AFP detection (more false positives), while higher values reduce false positives but may miss some AFPs.
 ## Input Method:
 Option 1: Input Sequence: Enter a protein sequence manually (single-letter amino acid codes) and an optional sequence name.
+
 Option 2: Upload FASTA File: Upload a FASTA file containing one or multiple protein sequences.
 ## Prediction Execution: 
 Click the "Predict" button to start processing. A progress bar will show the status of sequence feature extraction and prediction.
@@ -56,5 +57,6 @@ Expandable sections for raw model outputs (`logits`) and full sequences
 `Results` are sorted by confidence level
 ## Download Options:
 Download all prediction results as a `CSV` file with details including sequence names, lengths, probabilities, and predictions.
+
 
 
