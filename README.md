@@ -28,7 +28,9 @@ Imbalanced dataset: To further validate the predictive performance and facilitat
 # Deployment of 模型名
 ## Set up environment for 模型名
 Set ProtTrans follow procedure from https://github.com/agemagician/ProtTrans/tree/master.
-```pip install requirements```
+```
+pip install requirements
+```
 ## Extract features
 Extract pLMs embedding: cd to the AFP_IGEMTianjin2025 dictionary, and run "python3 ProtT5_Extraction.py", the pLMs embedding matrixs will be extracted to midData/ProtTran fold.
 ## Model training and testing
@@ -56,4 +58,5 @@ AFP probability visual progress bar
 Expandable sections for raw model outputs (logits) and full sequences
 Results are sorted by confidence level
 ## Download Options:
+
 Download all prediction results as a CSV file with details including sequence names, lengths, probabilities, and predictions.
