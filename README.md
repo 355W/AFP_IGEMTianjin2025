@@ -12,6 +12,7 @@ The model is built upon the ProtT5-XL-UniRef50 encoder, a transformer-based mode
 Additionally, a user-friendly web application is built on Streamlit for real-time prediction and hypothesis testing by researchers. This tool provides a powerful, high-performance, and interpretable platform for accelerating AFP discovery and analysis.
 # Dataset
 AFP920.seq: this file contains 920 AFPs with key-value format
+
 Non-AFP9493.seq: this file contains 9493 Non-AFPs with key-value format
 
 We constructed a dataset comprising 920 AFPs and 9493 non-AFPs.
@@ -57,6 +58,7 @@ Expandable sections for raw model outputs (`logits`) and full sequences
 `Results` are sorted by confidence level
 ## Download Options:
 Download all prediction results as a `CSV` file with details including sequence names, lengths, probabilities, and predictions.
+
 
 
 
