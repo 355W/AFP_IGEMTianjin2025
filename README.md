@@ -1,9 +1,9 @@
-# 模型名
+# AFP_IGEMTianjin2025
 The package includes an executable to identify Antifreeze Proteins for given sequences. 
 
-It also includes all components of 模型名. You may incorporate 模型名 into your pipeline or modify it to suit your needs.
+It also includes all components of AFP_IGEMTianjin2025. You may incorporate AFP_IGEMTianjin2025 into your pipeline or modify it to suit your needs.
 
-Please also check out our webserver for real-time prediction of antifreeze protein features. https://2025.igem.wiki/Tianjin/software(模型名)
+Please also check out our webserver for real-time prediction of antifreeze protein features. https://2025.igem.wiki/Tianjin/AFP_IGEMTianjin2025(待定)
 # Description
 This antifreeze protein (AFP) prediction model presents an end-to-end computational framework for predicting protein function directly from sequence data. It employs a two-stage architecture combining a pre-trained protein language model for feature extraction with a bespoke deep learning classifier for accurate functional annotation.
 
@@ -58,6 +58,7 @@ Expandable sections for raw model outputs (`logits`) and full sequences
 `Results` are sorted by confidence level
 ## Download Options:
 Download all prediction results as a `CSV` file with details including sequence names, lengths, probabilities, and predictions.
+
 
 
 
