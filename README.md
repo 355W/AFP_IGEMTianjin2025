@@ -3,7 +3,7 @@ The package includes an executable to identify Antifreeze Proteins for given seq
 
 It also includes all components of AFP_IGEMTianjin2025. You may incorporate AFP_IGEMTianjin2025 into your pipeline or modify it to suit your needs.
 
-Please also check out our webserver for real-time prediction of antifreeze protein features. https://2025.igem.wiki/Tianjin/AFP_IGEMTianjin2025(待定)
+Please also check out our webserver for real-time prediction of antifreeze protein features. https://gitlab.igem.org/2025/software-tools/tianjin
 # Description
 This antifreeze protein (AFP) prediction model presents an end-to-end computational framework for predicting protein function directly from sequence data. It employs a two-stage architecture combining a pre-trained protein language model for feature extraction with a bespoke deep learning classifier for accurate functional annotation.
 
@@ -24,7 +24,7 @@ Balance dataset: The dataset was divided into training and test sets, 644 AFPs a
 
 Imbalanced dataset: To further validate the predictive performance and facilitate subsequent research, we introduced an imbalanced dataset. This dataset was divided with 70% AFPs and non-AFPs for training and the remaining 30% for independent testing respectively.
 # Deployment of 模型名
-## Set up environment for 模型名
+## Set up environment for AFP_IGEMTianjin2025
 Set ProtTrans follow procedure from https://github.com/agemagician/ProtTrans/tree/master.
 ```
 pip install requirements
@@ -58,6 +58,7 @@ Expandable sections for raw model outputs (`logits`) and full sequences
 `Results` are sorted by confidence level
 ## Download Options:
 Download all prediction results as a `CSV` file with details including sequence names, lengths, probabilities, and predictions.
+
 
 
 
